@@ -608,13 +608,6 @@
     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrCacheSurrogate.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrParams.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrSynth.cs" />
-    <Compile Include="Assets\FungusExamples\FirstPerson\Scripts\ForceCursorVisible.cs" />
-    <Compile Include="Assets\FungusExamples\FirstPerson\Scripts\FPDemoPriorityRouter.cs" />
-    <Compile Include="Assets\FungusExamples\FirstPerson\Scripts\LookingAtDoor.cs" />
-    <Compile Include="Assets\FungusExamples\FirstPerson\Scripts\SimpleForceMovement.cs" />
-    <Compile Include="Assets\FungusExamples\FirstPerson\Scripts\SimpleMouseLook.cs" />
-    <Compile Include="Assets\FungusExamples\FungusLua\Bindings\CustomScript.cs" />
-    <Compile Include="Assets\FungusExamples\MonoBehEvents\SpriteColorChangeFromFungusMouseEvent.cs" />
     <Compile Include="Assets\Scripts\BattleScene.cs" />
     <Compile Include="Assets\Scripts\BookPage.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
@@ -634,31 +627,22 @@
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Material\rPage.shader" />
     <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\JSON\readme.txt" />
-    <None Include="Assets\FungusExamples\FungusLua\Localization\stringtable.txt" />
     <None Include="Assets\Fungus\Docs\README.txt" />
-    <None Include="Assets\FungusExamples\FirstPerson\Visuals\Google Poly\Button\CC-BY.txt" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Fungus\Fonts\Exo2\OFL.txt" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Fungus\Docs\LICENSE.txt" />
     <None Include="Assets\Fungus\Integrations\Playmaker\ReadMe.txt" />
     <None Include="Assets\Fungus\Scripts\link.xml" />
-    <None Include="Assets\FungusExamples\FungusLua\Narrative\Resources\Lua\junglestory.txt" />
-    <None Include="Assets\FungusExamples\Attribution.txt" />
-    <None Include="Assets\FungusExamples\FirstPerson\Visuals\Google Poly\Lock\CC-BY.txt" />
-    <None Include="Assets\FungusExamples\TheFacility\Fonts\aleo\SIL Open Font License.txt" />
-    <None Include="Assets\FungusExamples\Sherlock\Readme.txt" />
     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\FungusTypes.txt" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\UnityTypes.txt" />
-    <None Include="Assets\FungusExamples\FirstPerson\Visuals\Google Poly\Key\CC-BY.txt" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Fungus\Integrations\Spine\Readme.txt" />
     <None Include="Assets\Fungus\Fonts\Amaranth\SIL Open Font License.txt" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\FungusExamples\FungusTown\Readme.txt" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Fungus\Textures\Attribution.txt" />
@@ -670,23 +654,22 @@
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\fungus.txt" />
-    <None Include="Assets\FungusExamples\FirstPerson\Visuals\Google Poly\Door\CC-BY.txt" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Fungus\Docs\CHANGELOG.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -890,31 +873,31 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="DemiLib">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Assets/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="DOTween43">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
     </Reference>
     <Reference Include="DOTween46">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
     </Reference>
     <Reference Include="DOTween50">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenPro">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Assets/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGameNew2/MiniGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/zhuge.yiulix/Documents/MiniGame4/MiniGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
