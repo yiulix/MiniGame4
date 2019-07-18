@@ -55,9 +55,9 @@ public class GameStartScene : MonoBehaviour
         }
 
 
-        if (Time.time - tStamp > 7 && Time.time - tStamp < 8)
+        if (Time.time - tStamp > 7.5f && Time.time - tStamp < 8.5f)
         {
-            textImg.GetComponent<Image>().color = Vector4.Lerp(new Vector4(1, 1, 1, 1), new Vector4(1, 1, 1, 0), (Time.time - tStamp - 7));
+            textImg.GetComponent<Image>().color = Vector4.Lerp(new Vector4(1, 1, 1, 1), new Vector4(1, 1, 1, 0), (Time.time - tStamp - 7.5f));
         }
     }
 

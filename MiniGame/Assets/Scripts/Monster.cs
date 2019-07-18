@@ -20,8 +20,9 @@ public class Monster : MonoBehaviour
     int[] M_ATTACK;
     int[] M_DEFENSE;
     int[] M_TYPEVALUE;
+    public Sprite[] M_SPRITE;
 
-    private void Start()
+    private void Awake()
     {
         M_ID = new int[6] { 0, 1, 2, 3, 4, 5 };
         M_NAME = new string[6] { "熊", "狼", "猴", "椒图", "两角兽", "麒麟" };
@@ -54,6 +55,8 @@ public class Monster : MonoBehaviour
         {
             defense += typeValue;
         }
+
+        GetComponent<SpriteRenderer>().sprite = M_SPRITE[id];
 
     }
 }
