@@ -14,6 +14,8 @@ public class BattleScene : MonoBehaviour
     public mCharacter c1;
     public mCharacter c2;
 
+    public AudioSource battleAudio;
+    GameObject audio;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,9 @@ public class BattleScene : MonoBehaviour
         c0 = GameObject.Find("c0").GetComponent<mCharacter>();
         c1 = GameObject.Find("c1").GetComponent<mCharacter>();
         c2 = GameObject.Find("c2").GetComponent<mCharacter>();
+
+        audio = GameObject.Find("Audio");
+        audio.SetActive(false);
     }
 
     // Update is called once per frame
@@ -157,6 +162,8 @@ public class BattleScene : MonoBehaviour
 
     public void NextScene()
     {
+        audio.SetActive(true);
+        battleAudio.gameObject.SetActive(false);
         SceneManager.LoadScene("Iteam");
     }
 }

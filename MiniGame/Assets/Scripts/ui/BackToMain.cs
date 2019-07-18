@@ -20,6 +20,12 @@ public class BackToMain : MonoBehaviour
 
     public void Back()
     {
+        if (GameObject.Find("BattleAudio"))
+        {
+            GameObject.Find("BattleAudio").SetActive(false);
+            GameObject.Find("Audio").SetActive(true);
+        }
+
         pgm.Act("GameStart");
     }
 }
