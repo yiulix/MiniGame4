@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FlowchartMangerDialogue : MonoBehaviour
 {
@@ -131,11 +132,16 @@ public class FlowchartMangerDialogue : MonoBehaviour
     {
         switch (i)
         {
-            case 1://跳转道具场景
+            case 1:
+                SceneManager.LoadScene("Iteam");
                 break;
-            case 2://跳转战斗时间
+            case 2:
+                SceneManager.LoadScene("Battle");
                 break;
             case 5://好感度变化并跳转选关场景
+                PageManager pgm = GameObject.Find("PageManager").GetComponent<PageManager>();
+                //好感度
+                pgm.Act("SelectDoor");
                 break;
         }
     }

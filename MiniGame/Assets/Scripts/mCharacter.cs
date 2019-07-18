@@ -12,6 +12,7 @@ public class mCharacter : MonoBehaviour
     public int attack;
     public int talent;
 
+    //对自己好感度
     public int[] relationships;
 
     public int[] relationshipChange;
@@ -42,9 +43,20 @@ public class mCharacter : MonoBehaviour
 
     }
 
-    public void ChangeRelationship()
+    public void ChangeRelationship(int i)
     {
-
+        if (isPlayer && ID == 0)
+        {
+            relationships[1] += i;
+        }
+        if (isPlayer && ID == 1)
+        {
+            relationships[2] += i;
+        }
+        if (isPlayer && ID == 2)
+        {
+            relationships[0] += i;
+        }
     }
 }
 
