@@ -28,12 +28,17 @@ public class PlayerMove : MonoBehaviour
             float enter;
             if (p.Raycast(ray, out enter))
             {
-                targetPos = ray.GetPoint(enter);
-                startPos = transform.position;
-                animator.SetBool("isMoving", true);
-                isMoving = true;
-                moveDuration = Vector3.Magnitude(targetPos - transform.position) / moveSpd;
-                tStamp = Time.time;
+                Vector3 pos = ray.GetPoint(enter);
+                if (pos.y < 3)
+                {
+                    targetPos = pos;
+                    startPos = transform.position;
+                    animator.SetBool("isMoving", true);
+                    isMoving = true;
+                    moveDuration = Vector3.Magnitude(targetPos - transform.position) / moveSpd;
+                    tStamp = Time.time;
+                }
+
 
             }
 
