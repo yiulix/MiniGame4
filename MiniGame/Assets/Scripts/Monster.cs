@@ -23,13 +23,13 @@ public class Monster : MonoBehaviour
 
     private void Start()
     {
-        M_ID = new int[] { 0, 1, 2, 3, 4, 5 };
-        M_NAME = new string[] { "熊", "狼", "猴", "椒图", "两角兽", "麒麟" };
-        M_HEALTH = new int[] { 300, 180, 90, 200, 250, 300 };
-        M_TYPE = new int[] { 0, 0, 0, 2, 3, 1 };
-        M_ATTACK = new int[] { 10, 25, 15, 25, 20, 25 };
-        M_DEFENSE = new int[] { 10, 5, 15, 15, 15, 20 };
-        M_TYPEVALUE = new int[] { 0, 0, 0, 10, 3, 5 };
+        M_ID = new int[6] { 0, 1, 2, 3, 4, 5 };
+        M_NAME = new string[6] { "熊", "狼", "猴", "椒图", "两角兽", "麒麟" };
+        M_HEALTH = new int[6] { 300, 180, 90, 200, 250, 300 };
+        M_TYPE = new int[6] { 0, 0, 0, 2, 3, 1 };
+        M_ATTACK = new int[6] { 10, 25, 15, 25, 20, 25 };
+        M_DEFENSE = new int[6] { 10, 5, 15, 15, 15, 20 };
+        M_TYPEVALUE = new int[6] { 0, 0, 0, 10, 3, 5 };
 
 
 
