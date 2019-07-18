@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BattleScene : MonoBehaviour
 {
@@ -103,6 +104,11 @@ public class BattleScene : MonoBehaviour
                 c2.TakeDamage(dmg);
             }
 
+            if (monster.type == 2)
+            {
+                monster.health += monster.typeValue;
+            }
+
         }
 
         if (monster.health <= 0)
@@ -121,7 +127,7 @@ public class BattleScene : MonoBehaviour
 
     void BattleWin()
     {
-
+        SceneManager.LoadScene("Iteam");
     }
 
     void BattleLose()

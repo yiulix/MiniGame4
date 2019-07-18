@@ -25,7 +25,7 @@ public class PageManager : MonoBehaviour
     {
         rPageTex = new Dictionary<string, string>();
         rPageTex.Add("SelectDoor", "test");
-        rPageTex.Add("Battle", "bg");
+        rPageTex.Add("Battle", "newbg");
     }
 
     // Update is called once per frame
