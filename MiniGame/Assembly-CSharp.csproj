@@ -614,6 +614,7 @@
     <Compile Include="Assets\Scripts\FlowchartManger.cs" />
     <Compile Include="Assets\Scripts\FlowchartMangerBattle.cs" />
     <Compile Include="Assets\Scripts\FlowchartMangerDialogue.cs" />
+    <Compile Include="Assets\Scripts\FlowchartMangerKeyplot.cs" />
     <Compile Include="Assets\Scripts\FullscreenSprite.cs" />
     <Compile Include="Assets\Scripts\GameStartScene.cs" />
     <Compile Include="Assets\Scripts\ItemScene.cs" />
