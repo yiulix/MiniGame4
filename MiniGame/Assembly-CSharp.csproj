@@ -636,6 +636,10 @@
     <Compile Include="Assets\Scripts\PageManager.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\SelectDoorScene.cs" />
+    <Compile Include="Assets\Scripts\ui\AttackUI.cs" />
+    <Compile Include="Assets\Scripts\ui\BackToMain.cs" />
+    <Compile Include="Assets\Scripts\ui\DefenseUI.cs" />
+    <Compile Include="Assets\Scripts\ui\HealthUI.cs" />
     <None Include="Assets\Fungus\Thirdparty\ThirdPartyNotices.txt" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Fungus\Thirdparty\TextMeshPro\Resources\LineBreaking Leading Characters.txt" />

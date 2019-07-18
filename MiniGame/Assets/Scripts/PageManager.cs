@@ -26,6 +26,7 @@ public class PageManager : MonoBehaviour
         rPageTex = new Dictionary<string, string>();
         rPageTex.Add("SelectDoor", "test");
         rPageTex.Add("Battle", "newbg");
+        rPageTex.Add("GameStart", "newbg");
     }
 
     // Update is called once per frame
@@ -52,10 +53,11 @@ public class PageManager : MonoBehaviour
         tStamp = Time.time;
         GameObject mainCam = GameObject.FindWithTag("MainCamera");
         mainCam.GetComponent<Camera>().targetTexture = rt;
-
         bookCam.SetActive(true);
         page.SetActive(true);
         lPage.SetActive(true);
+
+
 
         if (nScene != "SelectDoor")
         {

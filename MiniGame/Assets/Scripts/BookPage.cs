@@ -18,7 +18,7 @@ public class BookPage : MonoBehaviour
         tStamp = Time.time;
         m_Material = GetComponent<MeshRenderer>().material;
         bookCam.transform.DORotate(new Vector3(-23, 0, 0), 3);
-        bookCam.transform.DOLocalMove(new Vector3(0, -3, -14), 3);
+        bookCam.transform.DOLocalMove(new Vector3(0, -5, -18), 3);
         {
             m_Material.SetFloat("_Angle", 0);
             m_Material.DOFloat(10, "_Angle", 0.3f);

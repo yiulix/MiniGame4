@@ -19,6 +19,7 @@ public class BattleScene : MonoBehaviour
     void Start()
     {
         toDialog = new string[3];
+        GenerateMonster();
     }
 
     // Update is called once per frame
@@ -29,8 +30,7 @@ public class BattleScene : MonoBehaviour
             pgm.Act("SelectDoor");
         }
     }
-
-    void StartBattle()
+    public void StartBattle()
     {
         turn = 0;
     }
@@ -136,11 +136,16 @@ public class BattleScene : MonoBehaviour
 
     void BattleWin()
     {
-        SceneManager.LoadScene("Iteam");
+        BattleState = 1;
     }
 
     void BattleLose()
     {
 
+    }
+
+    public void NextScene()
+    {
+        SceneManager.LoadScene("Iteam");
     }
 }
