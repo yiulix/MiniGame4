@@ -86,6 +86,7 @@ public class FlowchartManger : MonoBehaviour
     }
     private void powerup(mCharacter character)
     {
+        Debug.Log("powerup" + character.ID.ToString());
         switch (NumofIteam)
         {
             case 1:

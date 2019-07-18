@@ -30,15 +30,17 @@ public class GameStartScene : MonoBehaviour
         DontDestroyOnLoad(c2.gameObject);
         DontDestroyOnLoad(audioS);
 
+        SelectPlayer();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         //initialize characters
-        c0.Init(0, "师兄", 100, 10, 10, 2);
-        c1.Init(1, "师姐", 100, 10, 10, 2);
-        c2.Init(2, "师妹", 100, 10, 10, 15);
+        c0.Init(0, "师兄", 100, 25, 7, 3);
+        c1.Init(1, "师姐", 100, 25, 7, 1);
+        c2.Init(2, "师妹", 100, 25, 7, 15);
 
         if  (Time.time - tStamp >10 && !acted)
         {
@@ -56,6 +58,26 @@ public class GameStartScene : MonoBehaviour
         if (Time.time - tStamp > 7 && Time.time - tStamp < 10)
         {
             textImg.GetComponent<Image>().color = Vector4.Lerp(new Vector4(1, 1, 1, 1), new Vector4(1, 1, 1, 0), (Time.time - tStamp - 7));
+        }
+    }
+
+    void SelectPlayer()
+    {
+        float r = Random.value;
+        if (r < 0.33f)
+        {
+            c0.isPlayer = true;
+            GameData.whoIsPlayer = 0;
+        }
+        else if (r < 0.67f)
+        {
+            c1.isPlayer = true;
+            GameData.whoIsPlayer = 1;
+        }
+        else
+        {
+            c2.isPlayer = true;
+            GameData.whoIsPlayer = 2;
         }
     }
 

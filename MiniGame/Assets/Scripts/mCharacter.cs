@@ -47,15 +47,15 @@ public class mCharacter : MonoBehaviour
     {
         if (isPlayer && ID == 0)
         {
-            relationships[1] += i;
+            GameData.relationship += i;
         }
         if (isPlayer && ID == 1)
         {
-            relationships[2] += i;
+            GameData.relationship += i;
         }
         if (isPlayer && ID == 2)
         {
-            relationships[0] += i;
+            GameData.relationship += i;
         }
     }
 }
@@ -63,4 +63,6 @@ public class mCharacter : MonoBehaviour
 public static class GameData
 {
     public static int floor = 1;
+    public static int whoIsPlayer = 0;
+    public static int relationship = 100;
 }

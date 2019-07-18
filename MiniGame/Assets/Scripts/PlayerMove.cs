@@ -12,10 +12,17 @@ public class PlayerMove : MonoBehaviour
     Vector3 startPos;
     public bool isMoving = false;
 
+    public Sprite[] qs;
+
+    Sprite tL;
+    Sprite tR;
+
     Animator animator;
     void Start()
     {
         animator = GetComponent<Animator>();
+        SetTexture();
+        GetComponent<SpriteRenderer>().sprite = tL;
     }
 
     // Update is called once per frame
@@ -34,7 +41,7 @@ public class PlayerMove : MonoBehaviour
                     pos = new Vector3(pos.x, 2, pos.z);
                 }
 
-                if (pos.x > -8 || pos.y < 2)
+                if (pos.x > -7 || pos.y < 2)
                 {
                     targetPos = pos;
                     startPos = transform.position;
@@ -51,6 +58,14 @@ public class PlayerMove : MonoBehaviour
         if (Time.time - tStamp < moveDuration)
         {
             transform.position = Vector3.Lerp(startPos, targetPos, (Time.time - tStamp) / moveDuration);
+            if (targetPos.x <= startPos.x)
+            {
+                GetComponent<SpriteRenderer>().sprite = tL;
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().sprite = tR;
+            }
         }
 
         else
@@ -60,5 +75,24 @@ public class PlayerMove : MonoBehaviour
         }
 
 
+    }
+
+    void SetTexture ()
+    {
+        if (GameData.whoIsPlayer == 0)
+        {
+            tL = qs[0];
+            tR = qs[1];
+        }
+        if (GameData.whoIsPlayer == 1)
+        {
+            tL = qs[2];
+            tR = qs[3];
+        }
+        if (GameData.whoIsPlayer == 2)
+        {
+            tL = qs[4];
+            tR = qs[5];
+        }
     }
 }
