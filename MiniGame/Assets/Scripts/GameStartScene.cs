@@ -37,25 +37,26 @@ public class GameStartScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Time.time - tStamp);
         //initialize characters
         c0.Init(0, "师兄", 100, 25, 7, 3);
         c1.Init(1, "师姐", 100, 25, 7, 1);
         c2.Init(2, "师妹", 100, 25, 7, 15);
 
-        if  (Time.time - tStamp >10 && !acted)
+        if  (Time.time - tStamp > 6 && !acted)
         {
             pm.Act("SelectDoor");
             textImg.SetActive(false);
             acted = true;
         }
 
-        if (Time.time - tStamp < 4)
+        if (Time.time - tStamp < 2)
         {
             textImg.GetComponent<Image>().color = Vector4.Lerp(new Vector4(1, 1, 1, 0), new Vector4(1, 1, 1, 1), (Time.time - tStamp));
         }
 
 
-        if (Time.time - tStamp > 7.5f && Time.time - tStamp < 8.5f)
+        if (Time.time - tStamp > 5f && Time.time - tStamp < 6f)
         {
             textImg.GetComponent<Image>().color = Vector4.Lerp(new Vector4(1, 1, 1, 1), new Vector4(1, 1, 1, 0), (Time.time - tStamp - 7.5f));
         }

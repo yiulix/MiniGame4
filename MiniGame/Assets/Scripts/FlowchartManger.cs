@@ -92,6 +92,7 @@ public class FlowchartManger : MonoBehaviour
             case 1:
                 {//角色i增加生命
                     character.health += 20;
+                    character.health = Mathf.Min(100, character.health);
                     break;
                 }
             case 2:

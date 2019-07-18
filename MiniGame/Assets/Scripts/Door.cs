@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
     public SelectDoorScene selectDoorScene;
     public int id;
     public int type = -1;
+    public Sprite[] sprites;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,7 @@ public class Door : MonoBehaviour
         if (r < 0.31f)
         {
             type = 0;
-            
+
         }
         else if (r < 0.54f)
         {
@@ -24,6 +25,7 @@ public class Door : MonoBehaviour
         {
             type = 2;
         }
+        GetComponent<SpriteRenderer>().sprite = sprites[type];
         Debug.Log("door " + id + ", type " + type);
     }
 
