@@ -15,6 +15,7 @@ public class FlowchartMangerBattle : MonoBehaviour
    void SetbattleValue()
     {
         toDialog=battle.OneTurn();
+        Debug.Log(toDialog[0]);
         flowchart.SetStringVariable("give", toDialog[0]);
         flowchart.SetStringVariable("accept", toDialog[1]);
         flowchart.SetStringVariable("damage", toDialog[2]);

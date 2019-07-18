@@ -4,7 +4,7 @@ public class SelectDoorScene : MonoBehaviour
 {
     public PageManager pgm;
     bool isSelecting = false;
-    int doorID;
+    int type;
     public PlayerMove playerMove;
     bool acted = false;
     // Start is called before the first frame update
@@ -18,7 +18,19 @@ public class SelectDoorScene : MonoBehaviour
     {
         if (isSelecting && !playerMove.isMoving && !acted)
         {
-            pgm.Act("Battle");
+            if (type == 0)
+            {
+                pgm.Act("Battle");
+
+            }
+            else if (type == 1)
+            {
+                pgm.Act("Iteam");
+            }
+            else
+            {
+                pgm.Act("Dialogue");
+            }
             acted = true;
         }
     }
@@ -29,10 +41,10 @@ public class SelectDoorScene : MonoBehaviour
 
     }
 
-    public void SelectDoor(int id)
+    public void SelectDoor(int dType)
     {
         playerMove.isMoving = true;
         isSelecting = true;
-        doorID = id;
+        type = dType;
     }
 }

@@ -19,7 +19,9 @@ public class BattleScene : MonoBehaviour
     void Start()
     {
         toDialog = new string[3];
-        GenerateMonster();
+        c0 = GameObject.Find("c0").GetComponent<mCharacter>();
+        c1 = GameObject.Find("c1").GetComponent<mCharacter>();
+        c2 = GameObject.Find("c2").GetComponent<mCharacter>();
     }
 
     // Update is called once per frame
@@ -30,9 +32,12 @@ public class BattleScene : MonoBehaviour
             pgm.Act("SelectDoor");
         }
     }
+
+    
     public void StartBattle()
     {
         turn = 0;
+        GenerateMonster();
     }
 
     void NextTurn()
@@ -50,25 +55,28 @@ public class BattleScene : MonoBehaviour
         if (turn == 0)
         {
             int dmg = c0.attack - monster.defense;
+            dmg = dmg > 0 ? dmg : 0;
             monster.health -= dmg;
             toDialog[0] = c0.cName;
             toDialog[1] = monster.name;
             toDialog[2] = dmg.ToString();
 
         }
-        if (turn == 2)
+        else if (turn == 2)
         {
             monster.health -= c1.attack;
             int dmg = c1.attack - monster.defense;
+            dmg = dmg > 0 ? dmg : 0;
             monster.health -= dmg;
             toDialog[0] = c1.cName;
             toDialog[1] = monster.name;
             toDialog[2] = dmg.ToString();
         }
-        if (turn == 4)
+        else if (turn == 4)
         {
             monster.health -= c2.attack;
             int dmg = c2.attack - monster.defense;
+            dmg = dmg > 0 ? dmg : 0;
             monster.health -= dmg;
             toDialog[0] = c2.cName;
             toDialog[1] = monster.name;
@@ -82,6 +90,7 @@ public class BattleScene : MonoBehaviour
             if (r == 0)
             {
                 dmg = monster.attack - c0.defense;
+                dmg = dmg > 0 ? dmg : 0;
                 toDialog[0] = monster.name;
                 toDialog[1] = c0.cName;
                 toDialog[2] = dmg.ToString();
@@ -90,6 +99,7 @@ public class BattleScene : MonoBehaviour
             if (r == 1)
             {
                 dmg = monster.attack - c1.defense;
+                dmg = dmg > 0 ? dmg : 0;
                 toDialog[0] = monster.name;
                 toDialog[1] = c1.cName;
                 toDialog[2] = dmg.ToString();
@@ -98,6 +108,7 @@ public class BattleScene : MonoBehaviour
             if (r == 2)
             {
                 dmg = monster.attack - c2.defense;
+                dmg = dmg > 0 ? dmg : 0;
                 toDialog[0] = monster.name;
                 toDialog[1] = c2.cName;
                 toDialog[2] = dmg.ToString();

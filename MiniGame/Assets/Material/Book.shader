@@ -123,8 +123,7 @@
 			fixed4 frag(v2f i):COLOR
 			{
 				float2 uv = i.uv;
-				uv.x = -uv.x;
-				fixed4 color = tex2D(_SecTex,-uv);
+				fixed4 color = tex2D(_SecTex,float2(i.uv[0],1 - i.uv[1]));
 				return _Color * color;
 			}
 			ENDCG

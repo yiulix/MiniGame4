@@ -34,7 +34,7 @@ public class mCharacter : MonoBehaviour
 
     public void TakeDamage(int dmg)
     {
-
+        health -= dmg;
     }
 
     void CheckChanges()

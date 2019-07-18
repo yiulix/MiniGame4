@@ -23,6 +23,7 @@ public class BookPage : MonoBehaviour
             m_Material.SetFloat("_Angle", 0);
             m_Material.DOFloat(10, "_Angle", 0.3f);
         }
+
     }
 
 
@@ -33,7 +34,8 @@ public class BookPage : MonoBehaviour
         {
             stage2 = true;
             m_Material.SetFloat("_Angle", 10);
-            m_Material.DOFloat(180, "_Angle", 3);
+            m_Material.DOFloat(178, "_Angle", 3);
+            GetComponent<AudioSource>().Play();
 
         }
         if (Time.time - tStamp > 6 && stage3 == false)

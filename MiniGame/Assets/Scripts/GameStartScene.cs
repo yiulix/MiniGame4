@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 //Do initialization here
 public class GameStartScene : MonoBehaviour
@@ -10,8 +10,14 @@ public class GameStartScene : MonoBehaviour
     public mCharacter c0;
     public mCharacter c1;
     public mCharacter c2;
+    public GameObject textImg;
+    public GameObject btn1;
+    public GameObject btn2;
 
+    public GameObject audioS;
+    float tStamp = 10000;
 
+    bool acted = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +28,7 @@ public class GameStartScene : MonoBehaviour
         DontDestroyOnLoad(c0.gameObject);
         DontDestroyOnLoad(c1.gameObject);
         DontDestroyOnLoad(c2.gameObject);
+        DontDestroyOnLoad(audioS);
 
     }
 
@@ -32,11 +39,31 @@ public class GameStartScene : MonoBehaviour
         c0.Init(0, "师兄", 100, 10, 10, 2);
         c1.Init(1, "师姐", 100, 10, 10, 2);
         c2.Init(2, "师妹", 100, 10, 10, 15);
+
+        if  (Time.time - tStamp >10 && !acted)
+        {
+            pm.Act("SelectDoor");
+            textImg.SetActive(false);
+            acted = true;
+        }
+
+        if (Time.time - tStamp < 4)
+        {
+            textImg.GetComponent<Image>().color = Vector4.Lerp(new Vector4(1, 1, 1, 0), new Vector4(1, 1, 1, 1), (Time.time - tStamp));
+        }
+
+
+        if (Time.time - tStamp > 7 && Time.time - tStamp < 10)
+        {
+            textImg.GetComponent<Image>().color = Vector4.Lerp(new Vector4(1, 1, 1, 1), new Vector4(1, 1, 1, 0), (Time.time - tStamp - 7));
+        }
     }
 
     public void NextScene()
     {
-        pm.Act("SelectDoor");
+        tStamp = Time.time;
+        btn1.SetActive(false);
+        btn2.SetActive(false);
     }
 
     public void QuitGame()
