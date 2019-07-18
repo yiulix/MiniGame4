@@ -28,7 +28,7 @@ class DataUse
     void readGameEvent()
     {
         // Read sample data from CSV file
-        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("E://GameEvent.CSV"))
+        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("D://GameEvent.CSV"))
         {
             ReadWriteCsv.CsvRow row = new ReadWriteCsv.CsvRow();
             int i = 1;
@@ -55,7 +55,7 @@ class DataUse
 
     void readGameMonster()
     {
-        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("E://GameMonster.CSV"))
+        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("D://GameMonster.CSV"))
         {
             ReadWriteCsv.CsvRow row = new ReadWriteCsv.CsvRow();
             int i = 1;
@@ -84,7 +84,7 @@ class DataUse
 
     void readTalkResult()
     {
-        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("E://TalkResult.CSV"))
+        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("D://TalkResult.CSV"))
         {
             ReadWriteCsv.CsvRow row = new ReadWriteCsv.CsvRow();
             int i = 1;
@@ -110,7 +110,7 @@ class DataUse
 
     void readGameBattle()
     {
-        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("E://GameBattle.CSV"))
+        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("D://GameBattle.CSV"))
         {
             ReadWriteCsv.CsvRow row = new ReadWriteCsv.CsvRow();
             int i = 1;
@@ -135,7 +135,7 @@ class DataUse
 
     void readGamePartner()
     {
-        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("E://GamePartner.CSV"))
+        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("D://GamePartner.CSV"))
         {
             ReadWriteCsv.CsvRow row = new ReadWriteCsv.CsvRow();
             int i = 1;
@@ -165,7 +165,7 @@ class DataUse
 
     void readGameTalk()
     {
-        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("E://GameTalk.CSV"))
+        using (ReadWriteCsv.CsvFileReader reader = new ReadWriteCsv.CsvFileReader("D://GameTalk.CSV"))
         {
             ReadWriteCsv.CsvRow row = new ReadWriteCsv.CsvRow();
             int i = 1;

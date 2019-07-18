@@ -276,12 +276,12 @@ GameObject:
   - component: {fileID: 96368045}
   - component: {fileID: 96368044}
   - component: {fileID: 96368046}
-  - component: {fileID: 96368041}
   - component: {fileID: 96368054}
   - component: {fileID: 96368015}
   - component: {fileID: 96368019}
   - component: {fileID: 96368023}
   - component: {fileID: 96368020}
+  - component: {fileID: 96368021}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -302,18 +302,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -4, y: 4}
+  scrollPos: {x: 102.7955, y: -8.811046}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
-  zoom: 1
+  blockViewHeight: 466
+  zoom: 0.87999964
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 96368008}
   selectedCommands: []
   variables:
   - {fileID: 96368014}
@@ -363,8 +364,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 45
-    y: 147
+    x: 47.272728
+    y: 139.04543
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -384,10 +385,10 @@ MonoBehaviour:
   - {fileID: 96368018}
   - {fileID: 96368017}
   - {fileID: 96368016}
+  - {fileID: 96368021}
   - {fileID: 96368048}
   - {fileID: 96368046}
   - {fileID: 96368044}
-  - {fileID: 96368041}
 --- !u!4 &96368009
 Transform:
   m_ObjectHideFlags: 0
@@ -583,10 +584,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 20
   indentLevel: 2
-  storyText: '{$saying}'
+  storyText: '{$Saying}'
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1183678699}
+  portrait: {fileID: 21300004, guid: a3ea5a36e7591324caf805ecc6ede23a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -627,6 +628,23 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1136628806}
   methodName: Keyplot(style)
+  delay: 0
+--- !u!114 &96368021
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96368005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 45
+  indentLevel: 0
+  targetObject: {fileID: 1136628806}
+  methodName: getvalue
   delay: 0
 --- !u!114 &96368022
 MonoBehaviour:
@@ -723,10 +741,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 2
-  storyText: '{$saying}'
+  storyText: '{$Saying}'
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1976665505}
+  portrait: {fileID: 21300000, guid: a3ea5a36e7591324caf805ecc6ede23a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -814,10 +832,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 2
-  storyText: '{$saying}'
+  storyText: '{$Saying}'
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1222191244}
+  portrait: {fileID: 21300002, guid: a3ea5a36e7591324caf805ecc6ede23a, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -953,25 +971,6 @@ MonoBehaviour:
   scope: 1
   key: menuA
   value: 
---- !u!114 &96368041
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96368005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 32
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: SelectDoor
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
 --- !u!114 &96368044
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1435,8 +1434,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -747, y: 661}
-  m_SizeDelta: {x: 357, y: 435}
+  m_AnchoredPosition: {x: -864.2, y: 693.1}
+  m_SizeDelta: {x: 607.7, y: 721.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &429612336
 GameObject:
@@ -2483,9 +2482,7 @@ MonoBehaviour:
   talk: 
   people: 
   chooId: 
-  f: {fileID: 0}
-  s1: []
-  s2: []
+  f: {fileID: 96368006}
   type: 0
 --- !u!1 &1167273366
 GameObject:
@@ -2598,7 +2595,8 @@ MonoBehaviour:
   nameText: "\u5E08\u59B9"
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300004, guid: a3ea5a36e7591324caf805ecc6ede23a, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 713182830}
   description: 
@@ -2708,8 +2706,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -165, y: 667}
-  m_SizeDelta: {x: 357, y: 435}
+  m_AnchoredPosition: {x: -245.7, y: 676.3}
+  m_SizeDelta: {x: 538, y: 688.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1222191243
 GameObject:
@@ -2743,7 +2741,8 @@ MonoBehaviour:
   nameText: "\u5E08\u5F1F"
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300002, guid: a3ea5a36e7591324caf805ecc6ede23a, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 1363148897}
   description: 
@@ -3518,8 +3517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1347, y: 704}
-  m_SizeDelta: {x: 357, y: 435}
+  m_AnchoredPosition: {x: -1368, y: 681.48}
+  m_SizeDelta: {x: 662, y: 698.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1692097327
 GameObject:
@@ -4050,7 +4049,8 @@ MonoBehaviour:
   nameText: "\u5E08\u59D0"
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: a3ea5a36e7591324caf805ecc6ede23a, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 1232715949}
   description: 
