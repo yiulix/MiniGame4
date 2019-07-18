@@ -24,26 +24,40 @@ class NewTalk
     {
         List<Model.GameTalk> gt = newData.gTalk;
         string TalkGroup = "";
-        foreach(Model.GameTalk s in gt)
+
+        foreach (Model.GameTalk s in gt)
         {
-            if(s.TalkGroup == TalkGroup)
+
+            if (TalkTle.Count == 0)
             {
-                //Model.GameTalk temp = new Model.GameTalk();
                 NTalk q = new NTalk();
                 q.nowTalk = s;
-                NTalk temp = TalkTle[TalkTle.Count - 1];
-                while(temp.nextTalk != null)
-                {
-                    temp = temp.nextTalk;
-                }
-                temp.nextTalk = q;
+                TalkTle.Add(q);
             }
             else
             {
-                NTalk t = new NTalk();
-                t.nowTalk = s;
-                TalkTle.Add(t);
+                NTalk temp = TalkTle[TalkTle.Count - 1];
+                if (s.TalkGroup == TalkGroup)
+                {
+                    //Model.GameTalk temp = new Model.GameTalk();
+                    NTalk q = new NTalk();
+                    q.nowTalk = s;
+                    while (temp.nextTalk != null)
+                    {
+                        temp = temp.nextTalk;
+                    }
+                    temp.nextTalk = q;
+                    //TalkTle.Add();
+                }
+                else
+                {
+                    NTalk t = new NTalk();
+                    t.nowTalk = s;
+                    TalkGroup = s.TalkGroup;
+                    TalkTle.Add(t);
+                }
             }
+
         }
     }
 
