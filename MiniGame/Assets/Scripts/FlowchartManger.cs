@@ -106,6 +106,42 @@ public class FlowchartManger : MonoBehaviour
                 }
         }
     }
+    public void c0h()
+    {
+        c0.health += 20;
+    }
+    public void c1h()
+    {
+        c1.health += 20;
+    }
+    public void c2h()
+    {
+        c2.health += 20;
+    }
+    public void c0a()
+    {
+        c0.attack += 10;
+    }
+    public void c1a()
+    {
+        c1.attack += 10;
+    }
+    public void c2a()
+    {
+        c2.attack += 10;
+    }
+    public void c0d()
+    {
+        c0.defense += 5;
+    }
+    public void c1d()
+    {
+        c1.defense += 5;
+    }
+    public void c2d()
+    {
+        c2.defense += 5;
+    }
     public void IsKeyplot()
     {
         //是否触发关键剧情
