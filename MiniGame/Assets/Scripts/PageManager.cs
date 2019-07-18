@@ -57,6 +57,11 @@ public class PageManager : MonoBehaviour
         page.SetActive(true);
         lPage.SetActive(true);
 
+        if (nScene != "SelectDoor")
+        {
+            GameData.floor += 1;
+        }
 
+        GameObject.Find("Canvas").SetActive(false);
     }
 }

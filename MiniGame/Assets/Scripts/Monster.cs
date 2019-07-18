@@ -13,7 +13,7 @@ public class Monster : MonoBehaviour
     public int type;
     public int typeValue;
 
-    private void Init()
+    public void Init(int id)
     {
         if (type == 1)
         {
