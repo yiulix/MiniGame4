@@ -32,6 +32,7 @@ class NewTalk
             {
                 NTalk q = new NTalk();
                 q.nowTalk = s;
+                TalkGroup = s.TalkGroup;
                 TalkTle.Add(q);
             }
             else

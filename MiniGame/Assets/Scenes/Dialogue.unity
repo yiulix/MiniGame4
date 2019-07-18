@@ -282,6 +282,8 @@ GameObject:
   - component: {fileID: 96368023}
   - component: {fileID: 96368020}
   - component: {fileID: 96368021}
+  - component: {fileID: 96368025}
+  - component: {fileID: 96368024}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -315,7 +317,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 96368008}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 96368024}
   variables:
   - {fileID: 96368014}
   - {fileID: 96368013}
@@ -383,6 +386,8 @@ MonoBehaviour:
   - {fileID: 96368026}
   - {fileID: 96368022}
   - {fileID: 96368018}
+  - {fileID: 96368025}
+  - {fileID: 96368024}
   - {fileID: 96368017}
   - {fileID: 96368016}
   - {fileID: 96368021}
@@ -727,6 +732,97 @@ MonoBehaviour:
   targetObject: {fileID: 1136628806}
   methodName: Keyplot(style)
   delay: 0
+--- !u!114 &96368024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96368005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 47
+  indentLevel: 2
+  storyText: '{$Saying}'
+  description: 
+  character: {fileID: 2004649919}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &96368025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96368005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 46
+  indentLevel: 1
+  compareOperator: 0
+  variable: {fileID: 96368013}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 3
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &96368026
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1870,7 +1966,7 @@ MonoBehaviour:
   storyText: {fileID: 750995172}
   storyTextGO: {fileID: 0}
   characterImage: {fileID: 379309282}
-  fitTextWithImage: 1
+  fitTextWithImage: 0
   closeOtherDialogs: 0
 --- !u!224 &713182831
 RectTransform:
@@ -2805,7 +2901,7 @@ MonoBehaviour:
   storyText: {fileID: 602006811}
   storyTextGO: {fileID: 0}
   characterImage: {fileID: 1459587129}
-  fitTextWithImage: 1
+  fitTextWithImage: 0
   closeOtherDialogs: 0
 --- !u!224 &1232715950
 RectTransform:
@@ -3098,7 +3194,7 @@ MonoBehaviour:
   storyText: {fileID: 2132059962}
   storyTextGO: {fileID: 0}
   characterImage: {fileID: 1211409686}
-  fitTextWithImage: 1
+  fitTextWithImage: 0
   closeOtherDialogs: 0
 --- !u!224 &1363148898
 RectTransform:
@@ -4067,6 +4163,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2004649918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2004649920}
+  - component: {fileID: 2004649919}
+  m_Layer: 0
+  m_Name: Character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2004649919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004649918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: "\u65C1\u767D"
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  soundEffect: {fileID: 0}
+  portraits: []
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
+--- !u!4 &2004649920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004649918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2040344591
 GameObject:
