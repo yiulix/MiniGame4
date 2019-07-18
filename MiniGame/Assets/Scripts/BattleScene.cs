@@ -122,6 +122,15 @@ public class BattleScene : MonoBehaviour
 
     void GenerateMonster()
     {
+        int r = (int)(Random.value * 3);
+        if (GameData.floor < 8)
+        {
+            monster.Init(r);
+        }
+        else
+        {
+            monster.Init(r + 3);
+        }
 
     }
 
