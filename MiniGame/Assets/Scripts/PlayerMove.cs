@@ -29,7 +29,12 @@ public class PlayerMove : MonoBehaviour
             if (p.Raycast(ray, out enter))
             {
                 Vector3 pos = ray.GetPoint(enter);
-                if (pos.y < 3)
+                if (pos.y > 2)
+                {
+                    pos = new Vector3(pos.x, 2, pos.z);
+                }
+
+                if (pos.x > -8 || pos.y < 2)
                 {
                     targetPos = pos;
                     startPos = transform.position;
@@ -38,7 +43,6 @@ public class PlayerMove : MonoBehaviour
                     moveDuration = Vector3.Magnitude(targetPos - transform.position) / moveSpd;
                     tStamp = Time.time;
                 }
-
 
             }
 

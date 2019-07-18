@@ -38,4 +38,9 @@ public class GameStartScene : MonoBehaviour
     {
         pm.Act("SelectDoor");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
