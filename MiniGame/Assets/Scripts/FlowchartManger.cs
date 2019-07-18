@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FlowchartManger : MonoBehaviour
 {
-    private int NumofIteam;
-    private int NumofPlayer;
+    public int NumofIteam;
+    public int NumofPlayer;
     public Fungus.Flowchart flowchart;
     public mCharacter c0;
     public mCharacter c1;
