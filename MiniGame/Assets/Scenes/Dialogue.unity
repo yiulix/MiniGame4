@@ -311,7 +311,7 @@ MonoBehaviour:
   scrollPos: {x: 102.7955, y: -8.811046}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 466
+  blockViewHeight: 280
   zoom: 0.87999964
   scrollViewRect:
     serializedVersion: 2
@@ -320,9 +320,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 96368049}
+  - {fileID: 96368008}
   selectedCommands:
-  - {fileID: 96368023}
+  - {fileID: 96368027}
   variables:
   - {fileID: 96368014}
   - {fileID: 96368013}
@@ -722,7 +722,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &96368023
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -870,7 +870,7 @@ MonoBehaviour:
   itemId: 48
   indentLevel: 0
   targetObject: {fileID: 1136628806}
-  methodName: startEvent
+  methodName: start
   delay: 0
 --- !u!114 &96368028
 MonoBehaviour:
@@ -938,7 +938,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &96368029
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -955,7 +955,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &96368030
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1016,7 +1016,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &96368033
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2804,6 +2804,8 @@ MonoBehaviour:
   c1: {fileID: 0}
   c2: {fileID: 0}
   c: {fileID: 0}
+  style: 0
+  floor: 0
 --- !u!1 &1167273366
 GameObject:
   m_ObjectHideFlags: 0

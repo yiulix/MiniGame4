@@ -22,6 +22,7 @@ public class FlowchartMangerDialogue : MonoBehaviour
     public mCharacter c;
     string actor;
     public int style;
+    public int floor;
 
     Model.GameEvent gEvent;//事件
     NewTalk nt;//对话集操作
@@ -48,6 +49,7 @@ public class FlowchartMangerDialogue : MonoBehaviour
             actor = "Partner_1001";
         if (c.ID == 2)
             actor = "Partner_1003";
+        floor = GameData.floor;
 
     }
 
@@ -66,9 +68,17 @@ public class FlowchartMangerDialogue : MonoBehaviour
 
         nConversation.InitREV216(actor);
         gEvent = nConversation.getRandomREV216();
-        s = nt.getTalk(gEvent.eventSign);
+        s = nt.getTalk(gEvent.eventTalk);
+        //nextTalk();
     }
-
+    public void start()
+    {
+        if (floor == 2)
+        {
+            startEvent();
+        } else
+            initCon();
+    }
 
     public mCharacter isplayer()
     {
