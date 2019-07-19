@@ -608,6 +608,7 @@
     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrCacheSurrogate.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrParams.cs" />
     <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Scripts\SfxrSynth.cs" />
+    <Compile Include="Assets\relationship.cs" />
     <Compile Include="Assets\Scripts\bakchange.cs" />
     <Compile Include="Assets\Scripts\BattleScene.cs" />
     <Compile Include="Assets\Scripts\BookPage.cs" />

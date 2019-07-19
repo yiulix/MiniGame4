@@ -68,4 +68,6 @@ public static class GameData
     public static int floor = 1;
     public static int whoIsPlayer = 0;
     public static int relationship = 100;
+    public static string s20;
+    public static int times = 1;
 }

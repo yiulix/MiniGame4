@@ -47,6 +47,7 @@ public class FlowchartMangerKeyplot : MonoBehaviour
             actor = "Partner_1001";
         if (c.ID == 2)
             actor = "Partner_1003";
+        f.SetIntegerVariable("times", GameData.times);
         
     }
 
@@ -152,6 +153,7 @@ public class FlowchartMangerKeyplot : MonoBehaviour
     {
         gEvent = nConversation.StartKeyEvent(actor);
         key = nt.getTalk(gEvent.eventTalk);
+        GameData.times++;
     }
 
     //关键事件下一个话语
@@ -179,18 +181,25 @@ public class FlowchartMangerKeyplot : MonoBehaviour
         foreach (string str in s1)
         {
             string[] s2 = DevUser.SUBString2(str);
-            if (i == 0)
+            if (i == 0) {
                 f.SetStringVariable("menuA", s2[0]);
+                GameData.s20 = s2[0];
+                    }
             if (i == 1)
+            {
                 f.SetStringVariable("menuB", s2[0]);
-            if (i == 2)
-                f.SetStringVariable("menuC", s2[0]);//按键语句
+                GameData.s20 = s2[0];
+            }//按键语句
             s0[i, 1] = s2[1];//下一事件id
             i++;
         }
     }
 
     //关键事件选项之后
+    public void keychoseresult()
+    {
+        ChooseResult(GameData.s20);
+    }
     void ChooseResult(string s1)
     {
         chooId = s1;//被选择的框id；
