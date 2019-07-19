@@ -25,9 +25,9 @@ public class PageManager : MonoBehaviour
     {
         rPageTex = new Dictionary<string, string>();
         rPageTex.Add("SelectDoor", "newbg");
-        rPageTex.Add("Battle", "newbg");
+        rPageTex.Add("Battle", "battlebg");
         rPageTex.Add("GameStart", "coverPage");
-        rPageTex.Add("Iteam", "newbg");
+        rPageTex.Add("Iteam", "itembg");
         rPageTex.Add("Dialogue", "newbg");
     }
 

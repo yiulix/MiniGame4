@@ -11,6 +11,7 @@ public class mCharacter : MonoBehaviour
     public int defense;
     public int attack;
     public int talent;
+    bool isDead = false;
 
     //对自己好感度
     public int[] relationships;
@@ -36,6 +37,8 @@ public class mCharacter : MonoBehaviour
     public void TakeDamage(int dmg)
     {
         health -= dmg;
+        health = Mathf.Max(health, 0);
+        isDead = true;
     }
 
     void CheckChanges()

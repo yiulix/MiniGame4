@@ -144,18 +144,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.67794645, y: 0.5505064}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.1509874, y: 2.300548}
   m_EdgeRadius: 0
 --- !u!114 &19395673
 MonoBehaviour:
@@ -172,6 +172,10 @@ MonoBehaviour:
   selectDoorScene: {fileID: 152748429}
   id: 1
   type: 0
+  sprites:
+  - {fileID: 21300000, guid: fb79fc7a04566f14b8d3b1bc5b98ffe6, type: 3}
+  - {fileID: 21300000, guid: 0aa1c96f4bad8c541b3adab7e41c0cde, type: 3}
+  - {fileID: 21300000, guid: 676134dd20de0a44cbcbc480b2d03a1a, type: 3}
 --- !u!212 &19395674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -209,12 +213,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 956a557bd27159d40917928cae5dc4ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb79fc7a04566f14b8d3b1bc5b98ffe6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -228,8 +232,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19395671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: 0.89, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: -1.14, y: 0.89, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -323,18 +327,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.28169417, y: 0.44176406}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.6535, y: 1.9590093}
   m_EdgeRadius: 0
 --- !u!114 &369096109
 MonoBehaviour:
@@ -351,6 +355,10 @@ MonoBehaviour:
   selectDoorScene: {fileID: 152748429}
   id: 2
   type: 0
+  sprites:
+  - {fileID: 21300000, guid: fb79fc7a04566f14b8d3b1bc5b98ffe6, type: 3}
+  - {fileID: 21300000, guid: 0aa1c96f4bad8c541b3adab7e41c0cde, type: 3}
+  - {fileID: 21300000, guid: 676134dd20de0a44cbcbc480b2d03a1a, type: 3}
 --- !u!212 &369096110
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -388,12 +396,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 956a557bd27159d40917928cae5dc4ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 676134dd20de0a44cbcbc480b2d03a1a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -407,8 +415,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369096107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.33, y: 0.89, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: 4.62, y: 0.89, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -718,18 +726,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.121219754, y: 0.40408146}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.9077485, y: 2.474209}
   m_EdgeRadius: 0
 --- !u!114 &1017020875
 MonoBehaviour:
@@ -746,6 +754,10 @@ MonoBehaviour:
   selectDoorScene: {fileID: 152748429}
   id: 0
   type: 0
+  sprites:
+  - {fileID: 21300000, guid: fb79fc7a04566f14b8d3b1bc5b98ffe6, type: 3}
+  - {fileID: 21300000, guid: 0aa1c96f4bad8c541b3adab7e41c0cde, type: 3}
+  - {fileID: 21300000, guid: 676134dd20de0a44cbcbc480b2d03a1a, type: 3}
 --- !u!212 &1017020876
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -783,7 +795,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 956a557bd27159d40917928cae5dc4ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0aa1c96f4bad8c541b3adab7e41c0cde, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -802,8 +814,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017020873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.31, y: 0.89, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: -6.51, y: 0.89, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -965,7 +977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449176421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.2, z: 0}
+  m_LocalPosition: {x: -0.45, y: -2.25, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

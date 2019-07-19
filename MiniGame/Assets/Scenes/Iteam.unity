@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -382,6 +382,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 532294242387039692, guid: 7e489b62671975146aeed48fe5f5d34c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 207baf823f8cc7a4c99f6445dd83b998,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e489b62671975146aeed48fe5f5d34c, type: 3}
 --- !u!1 &63681782
@@ -901,6 +907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9b09ccd6ce624241969c791ec70a388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumofIteam: 0
+  NumofPlayer: 0
   flowchart: {fileID: 1073403009}
   c0: {fileID: 0}
   c1: {fileID: 0}
@@ -1106,8 +1114,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1073403012}
-  selectedCommands:
-  - {fileID: 1073403039}
+  selectedCommands: []
   variables:
   - {fileID: 1073403010}
   - {fileID: 1073403038}
@@ -1133,7 +1140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 0
+  scope: 1
   key: Iteam
   value: 0
 --- !u!114 &1073403011
@@ -1217,7 +1224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
+    x: 66
     y: 70
     width: 120
     height: 40
@@ -1349,7 +1356,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 249
-    y: -25
+    y: -26
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}

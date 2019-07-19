@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FlowchartManger : MonoBehaviour
 {
-    private int NumofIteam;
-    private int NumofPlayer;
+    public int NumofIteam;
+    public int NumofPlayer;
     public Fungus.Flowchart flowchart;
     public mCharacter c0;
     public mCharacter c1;
@@ -92,6 +92,7 @@ public class FlowchartManger : MonoBehaviour
             case 1:
                 {//角色i增加生命
                     character.health += 20;
+                    character.health = Mathf.Min(100, character.health);
                     break;
                 }
             case 2:
