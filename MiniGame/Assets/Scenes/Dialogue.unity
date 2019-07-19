@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -276,14 +276,18 @@ GameObject:
   - component: {fileID: 96368045}
   - component: {fileID: 96368044}
   - component: {fileID: 96368046}
-  - component: {fileID: 96368054}
   - component: {fileID: 96368015}
   - component: {fileID: 96368019}
-  - component: {fileID: 96368023}
   - component: {fileID: 96368020}
   - component: {fileID: 96368021}
   - component: {fileID: 96368025}
   - component: {fileID: 96368024}
+  - component: {fileID: 96368027}
+  - component: {fileID: 96368031}
+  - component: {fileID: 96368030}
+  - component: {fileID: 96368029}
+  - component: {fileID: 96368033}
+  - component: {fileID: 96368023}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -316,9 +320,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 96368008}
+  - {fileID: 96368049}
   selectedCommands:
-  - {fileID: 96368024}
+  - {fileID: 96368023}
   variables:
   - {fileID: 96368014}
   - {fileID: 96368013}
@@ -378,6 +382,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 96368007}
   commandList:
+  - {fileID: 96368027}
   - {fileID: 96368015}
   - {fileID: 96368036}
   - {fileID: 96368034}
@@ -632,7 +637,7 @@ MonoBehaviour:
   itemId: 44
   indentLevel: 0
   targetObject: {fileID: 1136628806}
-  methodName: Keyplot(style)
+  methodName: Keyplot
   delay: 0
 --- !u!114 &96368021
 MonoBehaviour:
@@ -717,7 +722,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &96368023
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -727,14 +732,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 42
+  itemId: 53
   indentLevel: 0
   targetObject: {fileID: 1136628806}
-  methodName: Keyplot(style)
+  methodName: Keyplot
   delay: 0
 --- !u!114 &96368024
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -761,7 +766,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &96368025
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -850,6 +855,23 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &96368027
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96368005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 48
+  indentLevel: 0
+  targetObject: {fileID: 1136628806}
+  methodName: startEvent
+  delay: 0
 --- !u!114 &96368028
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -914,6 +936,57 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &96368029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96368005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 51
+  indentLevel: 0
+  targetObject: {fileID: 1136628806}
+  methodName: choice3
+  delay: 0
+--- !u!114 &96368030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96368005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 50
+  indentLevel: 0
+  targetObject: {fileID: 1136628806}
+  methodName: choice2
+  delay: 0
+--- !u!114 &96368031
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96368005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  targetObject: {fileID: 1136628806}
+  methodName: choice1
+  delay: 0
 --- !u!114 &96368032
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -941,6 +1014,23 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &96368033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96368005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 52
+  indentLevel: 0
+  targetObject: {fileID: 1136628806}
+  methodName: Keyplot
+  delay: 0
 --- !u!114 &96368034
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1106,8 +1196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 286
-    y: 257
+    x: 283.7273
+    y: 255.86362
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1117,6 +1207,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 96368029}
   - {fileID: 96368020}
 --- !u!114 &96368046
 MonoBehaviour:
@@ -1168,7 +1259,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 96368023}
+  - {fileID: 96368030}
+  - {fileID: 96368033}
 --- !u!114 &96368048
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1219,24 +1311,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 96368054}
---- !u!114 &96368054
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96368005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 33
-  indentLevel: 0
-  targetObject: {fileID: 1136628806}
-  methodName: Keyplot(style)
-  delay: 0
+  - {fileID: 96368031}
+  - {fileID: 96368023}
 --- !u!1 &105461230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,6 +2800,10 @@ MonoBehaviour:
   chooId: 
   f: {fileID: 96368006}
   type: 0
+  c0: {fileID: 0}
+  c1: {fileID: 0}
+  c2: {fileID: 0}
+  c: {fileID: 0}
 --- !u!1 &1167273366
 GameObject:
   m_ObjectHideFlags: 0
@@ -4485,7 +4565,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2040344591
 GameObject:
