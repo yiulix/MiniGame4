@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FlowchartManger : MonoBehaviour
 {
@@ -145,6 +146,16 @@ public class FlowchartManger : MonoBehaviour
     }
     public void IsKeyplot()
     {
-        //是否触发关键剧情
+        if (GameData.relationship > 30 && GameStartScene.T30)
+        {
+            SceneManager.LoadScene("KeyPlot");
+            GameStartScene.T30 = false;
+        }
+        if (GameData.relationship > 60 && GameStartScene.T60)
+        {
+            SceneManager.LoadScene("KeyPlot");
+            GameStartScene.T60 = false;
+        }
+        SceneManager.LoadScene("SelectDoor");
     }
 }

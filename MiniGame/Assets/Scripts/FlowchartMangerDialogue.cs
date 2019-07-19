@@ -23,6 +23,7 @@ public class FlowchartMangerDialogue : MonoBehaviour
     string actor;
     public int style;
     public int floor;
+    
 
     Model.GameEvent gEvent;//事件
     NewTalk nt;//对话集操作
@@ -50,7 +51,6 @@ public class FlowchartMangerDialogue : MonoBehaviour
         if (c.ID == 2)
             actor = "Partner_1003";
         floor = GameData.floor;
-
     }
 
     //第一层开始随机事件
@@ -273,6 +273,16 @@ public class FlowchartMangerDialogue : MonoBehaviour
                 SceneManager.LoadScene("Battle");
                 break;
             case 5://好感度变化并跳转选关场景
+                if (GameData.relationship > 30 && GameStartScene.T30)
+                {
+                    SceneManager.LoadScene("KeyPlot");
+                    GameStartScene.T30 = false;
+                }
+                if (GameData.relationship > 60 && GameStartScene.T60)
+                {
+                    SceneManager.LoadScene("KeyPlot");
+                    GameStartScene.T60 = false;
+                }
                 SceneManager.LoadScene("SelectDoor");
                 break;
         }

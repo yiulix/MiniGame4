@@ -273,19 +273,16 @@ GameObject:
   - component: {fileID: 96368048}
   - component: {fileID: 96368049}
   - component: {fileID: 96368047}
-  - component: {fileID: 96368045}
   - component: {fileID: 96368044}
   - component: {fileID: 96368046}
   - component: {fileID: 96368015}
   - component: {fileID: 96368019}
-  - component: {fileID: 96368020}
   - component: {fileID: 96368021}
   - component: {fileID: 96368025}
   - component: {fileID: 96368024}
   - component: {fileID: 96368027}
   - component: {fileID: 96368031}
   - component: {fileID: 96368030}
-  - component: {fileID: 96368029}
   - component: {fileID: 96368033}
   - component: {fileID: 96368023}
   m_Layer: 0
@@ -319,10 +316,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 96368008}
-  selectedCommands:
-  - {fileID: 96368027}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 96368014}
   - {fileID: 96368013}
@@ -622,23 +617,6 @@ MonoBehaviour:
   scope: 1
   key: style
   value: 0
---- !u!114 &96368020
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96368005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 44
-  indentLevel: 0
-  targetObject: {fileID: 1136628806}
-  methodName: Keyplot
-  delay: 0
 --- !u!114 &96368021
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -936,23 +914,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &96368029
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96368005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 51
-  indentLevel: 0
-  targetObject: {fileID: 1136628806}
-  methodName: choice3
-  delay: 0
 --- !u!114 &96368030
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1173,7 +1134,7 @@ MonoBehaviour:
   indentLevel: 0
   text: '{$menuC}'
   description: 
-  targetBlock: {fileID: 96368045}
+  targetBlock: {fileID: 0}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -1182,33 +1143,6 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &96368045
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96368005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 283.7273
-    y: 255.86362
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 27
-  blockName: MenuC
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 96368029}
-  - {fileID: 96368020}
 --- !u!114 &96368046
 MonoBehaviour:
   m_ObjectHideFlags: 2

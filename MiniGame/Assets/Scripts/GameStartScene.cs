@@ -13,6 +13,8 @@ public class GameStartScene : MonoBehaviour
     public GameObject textImg;
     public GameObject btn1;
     public GameObject btn2;
+    public static bool T30;
+    public static bool T60;
 
     public GameObject audioS;
     float tStamp = 10000;
@@ -29,7 +31,8 @@ public class GameStartScene : MonoBehaviour
         DontDestroyOnLoad(c1.gameObject);
         DontDestroyOnLoad(c2.gameObject);
         DontDestroyOnLoad(audioS);
-
+        T30 = true;
+        T60 = true;
         SelectPlayer();
 
     }
