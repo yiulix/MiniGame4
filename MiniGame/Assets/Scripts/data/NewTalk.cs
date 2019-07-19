@@ -24,10 +24,11 @@ class NewTalk
     {
         List<Model.GameTalk> gt = newData.gTalk;
         string TalkGroup = "";
-
-        foreach (Model.GameTalk s in gt)
+        
+        foreach(Model.GameTalk s in gt)
         {
 
+            //Console.Write(TalkTle.Count); Console.Write("\t");
             if (TalkTle.Count == 0)
             {
                 NTalk q = new NTalk();
@@ -58,7 +59,7 @@ class NewTalk
                     TalkTle.Add(t);
                 }
             }
-
+            
         }
     }
 
@@ -74,6 +75,26 @@ class NewTalk
         return result;
     }
 
+    public void toString()
+    {
 
+        Console.Write(TalkTle.Count); Console.Write("\t");
+        foreach (NTalk s in TalkTle)
+        {
+            NTalk k = s;
+            while (k != null)
+            {
+                Console.Write(k.nowTalk.id); Console.Write("\t");
+                Console.Write(k.nowTalk.TalkGroup); Console.Write("\t");
+                Console.Write(k.nowTalk.TalkRole); Console.Write("\t");
+                Console.Write(k.nowTalk.TalkSelect); Console.Write("\t");
+                Console.Write(k.nowTalk.RoleHead); Console.Write("\t");
+                Console.Write(k.nowTalk.EventName); Console.WriteLine();
+                k = k.nextTalk;
+            }
+
+            Console.WriteLine();Console.WriteLine();
+        }
+    }
 }
 
